@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+  font-family: "GmarketSans";
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  margin: 0;
+   overflow: auto;
+   
+}
+
+
+/* Chrome, Whale, Edge */
+
+.mkSideBox::-webkit-scrollbar {
+    width: 8px;    
+}
+
+.mkSideBox::-webkit-scrollbar-thumb {
+    height: 30%;   
+    background: #e6007e;   
+    
+    border-radius: 10px;
+}
+
+.mkSideBox::-webkit-scrollbar-track {
+    background: rgba(230, 0, 126, .1);  
+}
+.section {
+	margin-top: 5rem;
+	width: 100%;
+	height: 100%;
+	position: relative;
+   
+  }
+
+
+
+.map {
+	min-width: 500px;
+	min-height: 500px;
+	width: 75%;
+	height: 85vh;
+	float: left;
+	margin: 2rem 1rem 1rem 2rem;
+	border: 2.5px solid #0e4194;
+	border-radius: 15px; /* 곡선 테두리 반경 지정 */
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* 회색 그림자 추가 */
+}
+
+.mkSideBox {
+	width: 20%;
+	height: 85vh;
+	float: left;
+	margin: 2rem 0 1rem 1.5rem;
+	background-color: rgb(243, 243, 243);
+	border: 2.5px solid #0e4194;
+	border-radius: 15px;  
+	overflow: auto;
+	overflow-x: hidden;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);  
+	z-index: 1;	
+}
+.store {
+	border: 2.5px solid #e6007e;
+}
+
+#mkListResult {
+	
+	height: 100%;
+	min-width: 450px;
+	max-height: 90vh;
+	overflow: auto;
+	
+	/* background-color: #eeeeee; */
+}
+.map {
+    position: relative;
+}
+/*호버 하면 점포등록이라고 옆에 나오게하기*/
+.plusStore{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    padding: 5px;
+    
+    background-color: #e6007e;
+    z-index: 9;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    overflow: hidden;
+    transition: width 0.5s, border-radius 0.5s;
+}
+.plusStore i {
+	font-size: 2rem;
+	
+}
+.plusStore  {
+	 font-size: 1.1rem;
+
+}
+.plusStore:hover  {
+   width: 140px;
+   
+    border-radius: 25px;
+   
+    
+    
+}
+.hideBox{
+	
+    width: 120px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+   
+    color: white;
+    font-size: 1rem;
+    line-height: 50px;
+    padding-left: 20px;
+    text-align: left;
+    background-color: #e6007e;
+    z-index: 9;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    
+    transition: left 0.5s;
+   
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+	
+}
+ 
+
+
+.right{
+   
+   	height: 100%;
+	min-width: 450px;
+	max-height: 90vh;
+	overflow: auto;
+	overflow-x: hidden;
+    
+}
+
+#information{
+	clear: both;
+}
+
+.mkcontainer{
+    display: flex;
+    border-bottom: 2px solid #0e4194;
+    min-height: 140px;
+	padding: 5px;
+	
+}
+
+
+#mkSearchName{
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #0e4194;
+
+}
+
+
+#mkName {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#mkaddr {
+	font-size: 1.1rem;
+}
+.searchResultName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+   
+
+}
+.searchResultName h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#toPost{
+    padding: 5px;
+    line-height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: #e6007e;
+    border: 0;
+    margin-left: 10px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0px 5px 0px 0px pink;
+}
+#toPost a{
+	font-size: 1rem;
+	color: white;
+	text-decoration: none;
+}
+
+
+/*#toPost:hover{
+    transform: rotate(15deg);
+    animation: rotateAnimation 0.5s ease-in-out infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}*/
+
+.btnSort{
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #0e4194;
+    
+}
+.btnSort button {
+    padding: 2px;
+    width: 150px;
+    background-color: #0e4194;
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+}
+
+.btnSort button:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+
+.insertStoreContainer{
+    display: flex;
+   justify-content: center;
+    
+}
+
+.imgContainer img{
+    width: 450px;
+	height: 260px;
+}
+.infoImgContainer img {
+	width: 390px;
+	height: 260px;
+	margin:auto;
+}
+#mkListResult{
+    overflow: auto;
+}
+.iwContent{
+    width: 120px;
+    height: 40px;
+    /* background-color: #e6007e; */
+    position: relative;
+    text-align: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+   
+    line-height: 40px;
+}
+.iwContent a{
+    text-decoration: none;
+    color: #e6007e;
+    
+}
+.up {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    
+    transition: top 100ms;
+    transition: transform 0.5s ease-in-out;
+    animation: rotateAnimation 0.5s ease-in-out infinite;
+  }
+  
+  .down {
+    position: absolute;
+    left: 10px;
+    font-size: 1rem;
+    
+    top: 40px; /* 초기에 숨겨진 상태 */
+    transition: top 100ms;
+
+  }
+  
+  .iwContent:hover .up {
+    top: -40px; /* hover 상태에서 up을 위로 이동하여 숨김 */
+  }
+  
+  .iwContent:hover .down {
+    top: 0; /* hover 상태에서 down을 아래로 이동하여 표시 */
+  }
+.infoContent{
+    width: 400px;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+.infoContent a{
+    display: inline-block;
+    
+    margin-left: 5px;
+    background-color: #0e4194;
+    color: white;
+    border: 0px;
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-decoration: none;
+    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);
+}
+.infoContent a:active{
+	  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+
+.notStore{
+    display: inline-block;
+    
+    margin-left: 5px;
+    background-color: grey;		
+    color: white;
+    border: 0px;
+    font-size: 1rem;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-decoration: none;
+    box-shadow: 1px 4px 0px 0px pink;
+}
+ 
+
+
+.notStore:active {
+  box-shadow: 1px 1px 0px 0px  pink;;
+  position: relative;
+  top:2px;
+}
+
+.countContainer{
+    display: flex;
+}
+.btnContainer{
+    text-align: center;
+}
+
+.fa-heart{
+    font-size: 1.5rem;
+    color: #e6007e;
+}
+.categoryAndType span{
+	font-size: 1rem;
+	color: gray;
+}
+.categoryAndType {
+	line-height: 40px;
+	clear: both;
+}
+.sName {
+	
+	float: left;
+	
+}
+
+.sName span{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
+.listLinkInfowindow{
+	background-color: transparent;
+	color: #e6007e;
+	border: 0px;
+	font-size: 1rem;
+	width: 100px;
+}
+.storeEtc{
+	width: 70%;
+	float: left;
+	line-height: 1.6;
+}
+.storeImgContainer{
+	width: 30%;
+	float: left;
+	border-radius: 20px;
+	line-height: 140px;
+}
+.storeImgContainer img{
+	border-radius: 20px;
+	width: 100%;
+	height: 100px;
+}
+
+.likeHeart img{
+	width: 1.5rem;
+	padding-bottom: 10px;
+}
+
+.likeHeart {
+	height: 40px;
+}

@@ -1,0 +1,111 @@
+/* Global */
+:root {
+  /* App Colors */
+  --color-primary: var(--color-navy);
+  --color-primary-variant: var(--color-purple);
+  --color-accent: var(--color-blue);
+  --color-accent-variant: var(--color-pink);
+  --color-background: var(--color-white);
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-navy: #0e4194;
+  --color-blue: #0188cc;
+  --color-pink: #e6007e;
+  --color-purple: #662583;
+  --color-gray: #a6a6a6;
+
+  /* Size */
+  --size-max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "GmarketSans";
+}
+
+body {
+  margin: 0;
+}
+
+/* common */
+.max-container {
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
+/* Sign Up */
+#mypage__update {
+  display: flex;
+  height: 70rem;
+  margin: auto;
+}
+
+.mypage__update {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 40px;
+  width: 450px;
+  border: 3px solid var(--color-accent);
+  border-radius: 50px;
+}
+
+.mypage__update__id {
+  font-size: 20px;
+  color: var(--color-gray);
+}
+
+.mypage__update__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.mypage__update__input {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  padding: 10px;
+  border: 3px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.duplication__check {
+  width: 18%;
+  border: none;
+  border-radius: 4px;
+  color: var(--color-background);
+  background-color: #d9d9d9;
+  font-size: 15px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.mypage__update__error {
+  color: red;
+  margin: 1rem 0;
+}
+
+.mypage__update__button {
+  width: 40%;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  transition: all 0.15s linear;
+  margin-bottom: 4px;
+}
+
+.mypage__update__button:hover {
+  background-color: var(--color-accent);
+}
+
+#error_msg {
+	color: red;
+}

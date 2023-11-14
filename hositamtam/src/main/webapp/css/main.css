@@ -1,0 +1,497 @@
+:root {
+    /* App Colors */
+    --color-primary: var(--color-navy);
+    --color-primary-variant: var(--color-purple);
+    --color-accent: var(--color-blue);
+    --color-accent-variant: var(--color-pink);
+    --color-background: var(--color-white);
+  
+    /* Colors */
+    --color-white: #ffffff;
+    --color-navy: #0e4194;
+    --color-blue: #0188cc;
+    --color-pink: #e6007e;
+    --color-purple: #662583;
+    --color-gray: #a6a6a6;
+  
+    /* Size */
+    --size-max-width: 1200px;
+  }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*letter-spacing: 1.5px;*/
+    font-family: "GmarketSans";
+    
+}
+html {
+  overflow: hidden;
+}
+html, body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  
+}
+body {
+  margin: 0;
+  /*height: 100vh;
+  background-image: url('../images/busanposter.png');
+  background-size: cover;  이미지를 화면에 맞게 늘리거나 축소합니다 
+  background-position: center;  이미지를 가운데 정렬합니다 
+  background-repeat: no-repeat;  배경 이미지 반복 제거 */
+}
+
+button {
+    display: inline-block;
+}
+body a {
+    text-decoration: none;
+}
+.mainHeader__nav a{
+	
+	text-decoration: none;
+}
+
+#section1 video {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; */
+  pointer-events: none; /* 비디오 요소가 클릭 이벤트를 가로채지 않도록 설정 */
+  width: 157%;
+            height: auto;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+}
+.section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#section1{
+/*    margin-top: 45px;*/
+    /* 3rem 나중에 바꾸기 */
+    
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+#section2 {
+	
+	 width: 100%;
+    height: 100%;
+    position: relative;
+  background-color: #eeeeee;
+}
+ul {
+    list-style: none;
+    padding: 0;
+  }
+#goService{
+	padding-top: 3rem;
+}  
+ 
+ 
+@keyframes narrationEffect {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#busanExplain {
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 62%;
+  left: 20%;
+  text-shadow: 2px 2px 2px black;
+  animation: narrationEffect 3s ease-in-out; /* 3초 동안 나타나는 효과를 줍니다. */
+}
+
+#btnGroup{
+  position: absolute;
+  top: 30%;
+  right: 1%;
+  font-size: 0.2rem;
+  
+}
+#btnGroup i{
+font-size: 2rem;
+}
+#btnGroup a{
+ color: white;
+ text-decoration: none;
+}    
+
+.category {
+  display: block;
+  margin-top: 1rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  border-radius: 50%;
+  line-height: 5rem;
+/*  background: radial-gradient(rgb(255, 255, 255, 0.7), rgba(1, 136, 204, 0.2));*/
+  border: 0;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+
+/*.category {*/
+/*    margin-top: 0.5rem;  rem 단위로 조정 */
+/*    margin-left: 2.5rem;  rem 단위로 조정 */
+/*    width: 5rem;  rem 단위로 조정 */
+/*    height: 5rem;  rem 단위로 조정 */
+/*    padding: 0.2rem;  rem 단위로 조정 */
+/*    border-radius: 50%;*/
+/*    text-shadow: 1px 4px 0 2px rgba(0, 0, 255, 1);  파란 그림자를 추가하고 투명도 조정 */
+/*    background: radial-gradient(rgba(14, 65, 148, 0.1), rgba(1, 136, 204, 0.7));  투명한 배경 적용 */
+/*    border: 0;  테두리 제거 */
+/*    color: white;*/
+/*}*/
+
+/*.category{*/
+/*    margin-top: 10px;*/
+/*    margin-left: 50px;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    padding: 5px;*/
+/*    border-radius: 50%;*/
+/*    box-shadow: 1px 4px 0 rgb(0,0,0,0.5);*/
+/*    background: radial-gradient( #0E4194, #0188CC  );*/
+/*    opacity: 0.9;*/
+/*    background-color: radial-gradient( circle, #0188CC, white, #0188CC);*/
+/*    border: 0px;*/
+/*    color: white;}*/ 	
+
+
+.category:active {
+  box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+  position: relative;
+  top:2px;
+}
+.category:hover{
+	animation: rotateAnimation 1s ease-in-out infinite;
+
+}
+
+/*옆에서 나오는 카테고리 */
+.listCategory{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+        width: 400px; 
+        height: 90vh; 
+       /* background: radial-gradient( #0E4194, #0188CC  );*/
+        /*background: #333333;*/
+   background-image: url('../images/busanposter.png');
+  background-size: cover;  
+  /*background-position: center; */ 
+  background-repeat: no-repeat;  
+  background-color: #0188CC;
+        position: fixed; 
+        z-index: 5;
+        color: white;
+        right: 0;
+        text-align: right;
+        bottom: 0;
+        transition : all 0.5s;
+        transform: translateX(550px);
+}
+.goCategory{
+  line-height: 60px;
+  
+  padding: 10px;
+}
+.goCategory a{
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+.goCategory li {
+    list-style-type: none;
+}
+
+
+.show-list{
+  transition : all 0.5s;
+  transform: translateX(0px);
+}
+.listCategoryContent{
+  font-size: 1.5rem;
+  z-index: 10;
+  
+}
+
+/*옆에서 나오는 카테고리 */
+
+
+#submit {
+  /* border-radius: 20px; */
+  border: 0px;
+  background-color: #0188CC;
+  transition : all 0.5s;
+  color: white;
+
+}
+#submit:hover {
+  border-radius: 20px;
+  border: 0px;
+  transition : all 0.5s;
+  color: white;
+
+  background-color: #0188CC;
+
+}
+.close {
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+}
+
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 40px;
+  width: 5px;
+  background-color: #ffffff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+/*========================= section2===================================== */
+.hosiInfo{
+  width: 80%;
+  
+  /* border: 4px solid #0E4194; */
+  margin: 0 auto;
+}
+.hosiInfo p {
+ font-size: 1.5rem;
+ text-align: center;
+ color: #0E4194;
+}
+.gradeIcon{
+  display: flex;
+  
+  justify-content: center;
+}
+.gradeImage{
+ width: 250px;
+  text-align: center;
+}
+.gradeLine{
+  display: flex;
+  justify-content: center;
+}
+.grade1, .grade2, .grade3, .grade4, .grade5{
+ width: 250px;
+ height: 50px;
+ text-align: center;
+ padding-top: 0.9rem;
+}
+
+.grade1, .grade2, .grade3, .grade4 {
+	color: var(--color-background);
+}
+
+.grade1{
+  background-color: #e6007e;
+}
+.grade2{
+  background-color: #0188CC;
+}
+.grade3{
+  background-color: #662583;
+}
+.grade4{
+  background-color: #0E4194;
+}
+.grade5{
+  background-color: gold;
+  font-weight: bold;
+}
+.gradeNameBox{
+  display: flex;
+  justify-content: center;
+
+}
+.gradeName{
+ width: 250px;
+ text-align: center;
+}
+
+/*========================= section2===================================== */
+/* Footer */
+#information {
+  position: relative;
+  text-align: center;
+  color:  #808b97;
+  background-color: #333333;
+  opacity: 0.9;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information__title {
+  
+  margin: 0;
+  padding: 0.5rem 10rem;
+  
+}
+.information__located{
+  width: 1000px;
+}
+
+.footer__logo_img{
+    width: 200px;
+    padding: 0 1rem;
+}
+.bi-arrow-up-circle-fill {
+  font-size: 3rem;
+}
+/* Footer End========================================*/
+
+ .dropdown{
+  margin: 0 auto;
+} 
+.fa-github{
+  color: white;
+  font-size: 1.5rem;
+  /*margin-bottom: 1rem;*/
+}
+
+.fa-github:hover {
+	color: var(--color-accent);
+}
+
+.bi-arrow-up-circle-fill {
+  color: white;
+}
+
+.dropDownMenu a{
+  color: #333333;
+}
+
+.carousel{
+	margin: 0 auto;
+	border-radius: 25px;
+	padding: 2rem;
+	width: 1200px;
+	height: 600px;
+	background-color: white;
+	/*border: 2px solid #0188CC;*/
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.btn {
+	margin: 1rem 0;
+}
+
+
+.carousel-item {
+  width: 100%;
+  height: 600px;
+
+}
+.carousel-item img{
+	
+  width: 100%;
+  height: 500px;
+  margin-bottom: 1rem;
+ border-radius: 25px;
+}
+.carousel-caption{
+	padding-top: 3rem;
+	font-size: 1rem;
+	line-height: 50px;
+}
+#section2 h4{
+	text-align: center;
+	color: #0e4194;
+	font-size: 1.5rem;
+}
+.expInfo{
+	width: 1250px;
+	margin: 0 auto;
+	text-align: right;
+	}
+
+/*====================================================================*/
+@keyframes pong {
+  from {
+	
+	background-color: #0E4194;
+    
+  }
+}
+
+/*#goPost:hover{
+	
+    animation: rotateAnimation 0.5s ease-in-out infinite;
+	
+    
+}
+#mkList:hover {
+    animation: rotateAnimation 0.5s ease-in-out infinite;
+  
+}*/
+ 
+@keyframes rotateAnimation {
+   0% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(15deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

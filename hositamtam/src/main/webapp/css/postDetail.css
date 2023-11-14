@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "GmarketSans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+hr {
+	background:#0e4194;
+    height:1px;
+    border:0;
+}
+#plikecountUpdate {
+	border: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	font-size: 1.2rem;
+	line-height: 40px;
+	color: #E6007E;
+	  
+}
+.fa-heart{
+	font-size: 1.5rem;
+}
+.click-heart{
+	color: red;
+}
+#plikecountUpdate{
+	display: inline-block;
+}
+.commentInsert{
+	height: 60px;
+	padding: 5px;
+	border-bottom: 1px solid gray;
+}
+.commentBox{
+	height: 50px;
+	line-height: 50px;
+	padding: 5px;
+	   border-bottom: 1px solid #0188CC;
+}
+input[type="submit"] {
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #0188CC;
+    color: white;
+}
+input[type="submit"]:hover {
+	box-shadow: 0 0 0 18px transparent;
+    animation: pulseSubmit 1s;
+}
+#plikecountUpdate {
+    &:hover {
+	box-shadow: 0 0 0 18px transparent;
+      animation: pulse 1s;
+      
+    }
+  }
+  
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 #E6007E;
+  }
+
+}
+@keyframes pulseSubmit {
+  from {
+    box-shadow: 0 0 0 0 #0188CC;
+  }
+}

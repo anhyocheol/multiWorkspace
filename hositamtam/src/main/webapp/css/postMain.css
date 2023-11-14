@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  font-family: "GmarketSans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+ 
+  margin: 0;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #section1{
+      margin-top: 3rem;
+      padding-top: 10px;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      margin-bottom: 100px;
+      
+  }
+
+a{
+    text-decoration: none;
+}
+td a{
+	 text-decoration: none;
+	 color: black;
+}
+td,tr{
+	text-align: center;
+}
+td {
+	min-height: 50px;
+	height: 60px;
+}
+button {
+	display: inline-block;
+}
+.container img{
+	text-align: center;
+	
+}
+.container {
+	margin-bottom: 2rem;
+}
+#postlistTable th,
+#postlistTable td {
+  border-bottom: 1px solid #0e4194;
+}
+
+#postlistTable {
+  border-collapse: collapse;
+}
+.list {
+    display: flex;
+   clear: both;
+   
+    padding: 0;
+    border-bottom: 2px solid #0188CC;
+}
+/*.list::after {
+    content: '';
+    display: block;
+    clear: both;
+}*/
+.tab-button{
+	display: block;
+	width: 120px;
+    padding: 5px 5px 5px 5px;
+    float: left;
+   	margin-bottom: 5px;
+  	margin-right: 2px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: white;
+    
+}
+.list button:hover{
+    
+    border: 1px solid #0188CC;
+    
+}
+.blue{
+    
+     background-color: #0188CC;
+     color: white;
+}
+.commentBox{
+    display: flex;
+}
+
+
+.firstShow{
+    width: 700px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url(../images/보고.PNG);
+        background-size: 100% 100%;
+
+}
+
+
+
+#commentInput{
+    width: 800px;
+}
+#btnPost{
+    float: right;
+}
+
+  
+.show {
+  display: block;
+}
+  
+.left{
+  display: flex;
+    
+}
+
+#mkName{
+    font-size: 40px;
+}
+#mkNameBox{
+	color: #0188CC;
+}
+#submit{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.submitBox{
+    text-align: center;
+
+}
+
+#writePost{
+    width: 100px;
+    border: 0;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #0188CC;
+    color: white;
+   
+}
+
+.mkNameList{
+
+    position: absolute;
+    width: 1400px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+}
+.mkNameList span{
+    margin-left: 20px;
+}
+
+
+.show-mkNameList{
+  
+    visibility: visible;
+    opacity: 1;
+    
+}
+#btnUp{
+    border: 0;
+    background-color: white;
+}
+
+.modify{
+    width: 80px;
+    height: 30px;
+    border: 0;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    line-height: 30px;
+}
+.modify:hover{
+    background-color: #0e4194;
+    color: white;
+}
+.btn-primary{
+    background-color: #0e4194;
+}
+
+
+.market_form label{
+	margin:0;
+	padding:0;
+	
+}
+
+
+
+
+#mno {
+	font-family: "GmarketSans";
+	border-radius: 5px;
+	background-color: white;
+	color: black;
+	border: 0px;
+	padding: 2px;
+	font-size: 1.05rem;
+	text-align: left;
+	margin-bottom: 2px;
+}
+#mno:hover {
+	background-color: #0e4194;
+	color: white;
+}
+#whatMarket{
+	border-radius: 2px;
+	background-color: #0e4194;
+	color: white;
+	border: 0px;
+	padding: 1px;
+	font-size: 1.05rem;
+}
+th {
+    min-width: 100px; 
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #0e4194;     
+    }
+.pTitle {
+	 padding: 5px;
+	text-align: center;
+	width: 250px;
+	 
+    
+}
+.pContent {
+	 padding: 5px;
+	text-align: left;
+	min-width: 400px; 
+    
+}
+
+.postHeader h4{
+	color: #0e4194;
+}
+.likeComment{
+	float: right;
+}
+.likeComment::after{
+	clear: both;
+}
