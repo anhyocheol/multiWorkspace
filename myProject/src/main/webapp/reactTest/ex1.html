@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>React Example1</title>
+	<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script>
+	const Header = ({message}) =>					//-> 컴퍼넌트 생성(리액트 공장)
+		React.createElement('h1', null, message);  	//-> 리액트 엘리먼트 생성
+	 	
+	function init() {
+		let container = document.querySelector('#root');
+		
+		ReactDOM.render(
+			React.createElement(Header, {message: '안녕, 세상아 ... !'}, null),
+			container
+		);
+	}
+		
+	window.addEventListener('load', init);
+	</script>
+</head>
+<body>
+
+	<h2>React Example1</h2>
+	<hr />
+	
+	<div id="root"></div>
+</body>
+</html>

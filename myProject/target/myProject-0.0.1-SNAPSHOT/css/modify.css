@@ -1,0 +1,20 @@
+table, th, td {
+	border: 2px solid gray;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+button {
+	display: inline-block;
+	margin: 10px 10px;
+	padding: 5px;
+}
+
+#msg {
+	color: red;
+	margin-top: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>json Example</title>
+<script>
+	let persons = 	[
+						{name:"손흥민",gender:"남자",age:31,field:"축구"}, 
+						{name:"김하성",gender:"남자",age:27,field:"야구"}, 
+						{name:"김연경",gender:"여자",age:37,field:"배구"}
+					];
+	let jsonPersons = JSON.stringify(persons);
+	let personsObj = JSON.parse(jsonPersons);
+	
+	function init() {
+		document.querySelector('#jsonStr').innerHTML = jsonPersons;
+		
+		let persons = '';
+		
+		for(let i in personsObj) {
+			
+			persons += 	'<h4>이름: ' + personsObj[i].name + 
+						', 성별: ' + personsObj[i].gender +
+						', 나이: ' + personsObj[i].age + 
+						', 분야: ' + personsObj[i].field + 
+						'</h4>';
+		}
+		document.querySelector('#jsonObj').innerHTML = persons;
+		
+	}
+	
+	window.addEventListener('load', init);
+</script>
+</head>
+<body>
+	<h4>Persons JSON String</h4>
+	<div id="jsonStr"></div>
+	
+	<hr />
+	
+	<h4>Persons Onject</h4>
+	<div id="jsonObj"></div>
+	
+</body>
+</html>

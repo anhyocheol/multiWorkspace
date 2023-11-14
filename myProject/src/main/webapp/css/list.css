@@ -1,0 +1,19 @@
+label {
+	display: inline-block;
+	width: 150px;
+}
+
+#msg {
+	margin-top: 10px;
+	color: red;
+}
+
+table, th, td {
+	border: 2px solid gray;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px 10px;
+	text-align: center;
+}
